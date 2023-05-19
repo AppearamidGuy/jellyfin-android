@@ -85,10 +85,6 @@ android {
         viewBinding = true
         compose = true
     }
-    kotlinOptions {
-        @Suppress("SuspiciousCollectionReassignment")
-        freeCompilerArgs += listOf("-Xopt-in=kotlin.RequiresOptIn")
-    }
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
